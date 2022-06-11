@@ -4,7 +4,9 @@ pipeline {
    stages{
      stage('build'){
          steps{
-             bat 'python -v'
+             bat 'call ./env/Scripts/activate.bat'
+             bat 'pip install -r requirement.txt'
+             bat 'python -m pytest tests -v -s'
          }
      }
    }
