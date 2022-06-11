@@ -4,7 +4,7 @@ pipeline {
    stages{
      stage('build'){
          steps{
-             python -v
+             sh 'python -v'
          }
      }
    }
