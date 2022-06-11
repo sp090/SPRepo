@@ -1,6 +1,7 @@
 import pytest
 import allure
 
+@allure.title("aaa")
 class TestLogin:
 
     @allure.title("test a")
